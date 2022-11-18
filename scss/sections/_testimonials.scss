@@ -1,12 +1,12 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
-.testimonials{
+.testimonials {
     position: relative;
     padding: 0;
     @include gradient;
 
-    &__card{
+    &__card {
         background-color: rgba($white, 0.8);
         padding: 2rem 1.25rem;
         border-radius: 0.625rem;
@@ -18,7 +18,7 @@
             color: rgba($primary, 0.7);
         }
 
-        .ratings{
+        .ratings {
 
             i{
                 color: rgba($primary, 0.7);
@@ -27,11 +27,10 @@
         }
     }
 
-    &__picture{
-       width: 4rem;
-       height: 6rem;
+    &__picture {
+       width: 10rem;
+       height: 10rem;
        position: absolute;
-    //    background-size: cover;
        left: 50%;
        transform: translate(-50%, -50%);
 
@@ -40,7 +39,7 @@
        }
     }
 
-    &__name{
+    &__name {
         padding-top: 3rem;
         margin-bottom: 1rem;
         text-align: center;
