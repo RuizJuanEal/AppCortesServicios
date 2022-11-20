@@ -44,7 +44,7 @@
         </div>
       </nav>
 
-<!-- INTRO -->
+<!-- SECTION INTRO -->
 <section id="home" class="intro-section">
     <div class="container">
         <div class="row align-items-center text-white">
@@ -53,12 +53,42 @@
             <div class="col-md-6 intros">
                 <h1 class="display-2">
                     <span class="display-2--intro">No más cortes!</span>
-                    <span class="display-2--description lh-lg">Enterate cada vez que haya un corte en tu localidad.</span>
-                      <button type="button" class="rounded-pill btn-rounded">NOTIFICAME
-                        <span>
-                          <i class="fas fa-arrow-right"></i>
-                        </span>
-                        </button>
+                    <span class="display-2--description lh-lg">Enterate cada vez que haya un corte en tu barrio.</span>
+                      <p class="display-2--description">Para ello, dinos cuál es tu localidad.</p>
+                      <!-- BOTONES OPCIONES -->
+                      
+                        <div class="dropdown contenido-seleccion" id="seleccion">
+                          <button class="btn btn-secondary dropdown-toggle" id="opciones" type="button" data-bs-toggle="dropdown" aria-expanded="false" action="#">
+                            Localidad
+                          </button>
+                          <ul class="dropdown-menu" id="opcion">
+                            <li><a class="dropdown-item" href="#" value="">-</a></li>
+                            <li><a class="dropdown-item" href="#" value="0">Usaquén</a></li>
+                            <li><a class="dropdown-item" href="#" value="1">Chapinero</a></li>
+
+
+                          </ul>
+
+                          <input type="hidden" name="localidad" id="inputSelect" value="" >
+
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" action="#" name="opt">
+                            Barrio
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" value="">-</a></li>
+                          </ul> 
+
+                          <!-- <form name="Localidad" action="#" class="btn btn-secondary dropdown-toggle">
+                            <select name="localidad">
+                              <option value="">as</option>
+                              <option value="">sd</option>
+                              <option value="">xc</option>
+                              <option value="">asa</option>
+                              <option value="">xc</option>
+                            </select>
+                          </form> -->
+                        </div>
+
                 </h1>
             </div>
             
@@ -74,7 +104,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,176C384,181,480,171,576,154.7C672,139,768,117,864,96C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
 
-<!-- COMPAÑIAS -->
+<!-- SECTION COMPAÑIAS -->
 
 <section id="companies" class="companies">
     <div class="container">
@@ -100,7 +130,7 @@
 </div>
 </section>
 
-<!-- VENTAJAS SECTION -->
+<!-- SECTION VENTAJAS -->
 
 <section id="services" class="services">
   <div class="container">
@@ -203,55 +233,168 @@
     <div class="row text-center text-white">
       <h1 class="display-3 fwbold">Testimonios</h1>
       <hr style="width: 100px; height: 3px;" class="mx-auto">
-      <p class="lead pt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, necessitatibus!</p>
+      <p class="lead pt-1">Usuarios que han probado nuestros servicios</p>
     </div>
 
-    <!-- CARRUSEL -->
+    <!-- SECTION CARRUSEL -->
     <div class="row align-items-center">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">      
         <div class="carousel-inner">
+          <!-- SECTION carrusel 1 -->
           <div class="carousel-item active">
-            <!-- testimonials card -->
+             <!-- testimonial card -->
             <div class="testimonials__card">
-              <p class="lh-lg"></p>
-              <i class="fas fa-quote-left"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis reiciendis neque ab quos, eligendi amet quisquam nisi quidem cumque distinctio!
-              <i class="fas fa-quote-right"></i>
-              <div class="ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Ya iban dos veces que realizaban cortes de agua por mantenimiento y nunca me enteraba, hasta que usé <b>Cortes App</b>.
+                <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </p>
+            </div> 
+
+            <!-- Foto persona -->
+            <div class="testimonials__picture">
+              <img src="/images/fotopersona/persona1.png" alt="foto cliente" class="rounded-circle img-fluid">
             </div>
-            <!-- foto persona -->
-            <div class="testimonilas__picture"></div>
-            <img src="/images/fotopersona/persona1.png" alt="picture">
+            <!-- Nombre y localidad -->
+            <div class="testimonials__name">
+              <h3>Dora</h3>
+              <p class="fw-light">Engativá</p>
+            </div>
+          </div>
+       
+          <!-- SECTION carrusel 2 -->
+          <div class="carousel-item">
+             <!-- testimonial card -->
+            <div class="testimonials__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facilis tempora ea. Officiis facilis tempora quaerat quis repudiandae explicabo fugit voluptates!
+                <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </p>
+            </div> 
 
-            <!-- nombre cliente -->
+            <!-- Foto persona -->
+            <div class="testimonials__picture">
+              <img src="/images/fotopersona/persona2.png" alt="foto cliente" class="rounded-circle img-fluid">
+            </div>
+            <!-- Nombre y localidad -->
+            <div class="testimonials__name">
+              <h3>Julio</h3>
+              <p class="fw-light">Teusaquillo</p>
+            </div>
+          </div>
+          <!-- SECTION carrusel 3 -->
+          <div class="carousel-item ">
+             <!-- testimonial card -->
+            <div class="testimonials__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facilis tempora ea. Officiis facilis tempora quaerat quis repudiandae explicabo fugit voluptates!
+                <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </p>
+            </div> 
 
-            <div class="testimonials__name"></div>
+            <!-- Foto persona -->
+            <div class="testimonials__picture">
+              <img src="/images/fotopersona/persona3.png" alt="foto cliente" class="rounded-circle img-fluid">
+            </div>
+            <!-- Nombre y localidad -->
+            <div class="testimonials__name">
+              <h3>Sandra</h3>
+              <p class="fw-light">Mártires</p>
+            </div>
+          </div>
+          <!-- SECTION carrusel 4 -->
+          <div class="carousel-item ">
+             <!-- testimonial card -->
+            <div class="testimonials__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facilis tempora ea. Officiis facilis tempora quaerat quis repudiandae explicabo fugit voluptates!
+                <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </p>
+            </div> 
 
+            <!-- Foto persona -->
+            <div class="testimonials__picture">
+              <img src="/images/fotopersona/persona4.png" alt="foto cliente" class="rounded-circle img-fluid">
+            </div>
+            <!-- Nombre y localidad -->
+            <div class="testimonials__name">
+              <h3>Francisco</h3>
+              <p class="fw-light">Candelaria</p>
+            </div>
+          </div>
+          <!-- SECTION carrusel 5 -->
+          <div class="carousel-item ">
+             <!-- testimonial card -->
+            <div class="testimonials__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facilis tempora ea. Officiis facilis tempora quaerat quis repudiandae explicabo fugit voluptates!
+                <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </p>
+            </div> 
+
+            <!-- Foto persona -->
+            <div class="testimonials__picture">
+              <img src="/images/fotopersona/persona5.png" alt="foto cliente" class="rounded-circle img-fluid">
+            </div>
+            <!-- Nombre y localidad -->
+            <div class="testimonials__name">
+              <h3>Cecilia</h3>
+              <p class="fw-light">Suba</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="text-center">
+          <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">          
+          </button>
+          <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          </button>
+        </div>
       </div>
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,202.7C672,224,768,224,864,202.7C960,181,1056,139,1152,144C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
 
-
-<!-- FAQ SECTION -->
-
+<!-- SECTION FAQ -->
 <section id="faq" class="faq">
     <div class="container">
         <div class="row text-center">
@@ -259,6 +402,7 @@
             <div class="heading-line"></div>
             <p class="lead">Preguntas frecuentes</p>
         </div>
+
         <!-- CONTENIDO ACORDEÓN -->
         <div class="row mt-5">
             <div class="col-md-12">
@@ -294,12 +438,14 @@
                       </div>
                     </div>
                   </div>
-            </div>
+              </div>
         </div>
     </div>
 </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="/assets/"></script>
+    <script src="./assets/js/dropdown.js"></script>
+    <!-- <script src="/assets/js/carrusel.js"></script> -->
+    <!-- <script src="./node_modules/bootstrap/js/src/carousel.js"></script> -->
 </body>
 </html>
