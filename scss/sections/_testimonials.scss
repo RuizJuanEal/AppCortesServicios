@@ -21,18 +21,18 @@
         .ratings {
 
             i{
-                color: rgba($primary, 0.7);
                 font-size: 1rem;
+                color: rgba($primary, 0.7);
             }
         }
     }
 
     &__picture {
-       width: 10rem;
-       height: 10rem;
-       position: absolute;
-       left: 50%;
-       transform: translate(-50%, -50%);
+        width: 6.2rem;
+        height: 6.2rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
        img{
         border:0.325rem solid rgba($primary, 0.7);
@@ -47,7 +47,13 @@
         color: $white;
 
         h3{
-            padding-top: 0.8rem;
+            padding-top: 1.8rem;
+            text-transform: capitalize;
+        }
+
+        p{
+            padding-bottom: 2rem;
+            text-transform: capitalize;
         }
     }
 }
