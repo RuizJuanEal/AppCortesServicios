@@ -10808,6 +10808,10 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+* p {
+  font-family: "Poppins", sans-serif;
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -10862,6 +10866,9 @@ textarea.form-control-lg {
   .display-3--title {
     font-size: 1.8rem;
   }
+}
+.display-3 p {
+  color: #1a71d5;
 }
 
 .border-right {

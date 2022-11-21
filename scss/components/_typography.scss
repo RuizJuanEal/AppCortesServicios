@@ -1,5 +1,13 @@
 @use '../custom' as *;
 
+*{
+    p{
+            font-family: 'Poppins', sans-serif;
+
+    }
+    // font-family: 'Poppins', sans-serif;
+}
+
 .display-2{
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -56,6 +64,10 @@
         @include media-breakpoint-up(lg){
             font-size: 1.8rem;
             }
+    }
+
+    p{
+        color: $primary;
     }
 }
 
